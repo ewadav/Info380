@@ -132,7 +132,7 @@
   <div class="wrapper">
     <div class="oversight">
       <a class="logo" href="http://www.seomoz.org/">
-        <img alt="SEOmoz Logo" src="/moz_nav_assets/images/logo.png" />
+        <img alt="SEOmoz Logo" src="logo.png" />
       </a>
         <div class="user-links">
   <ul>
@@ -278,87 +278,31 @@
   </li>
 </ul>
 <div class="body">
-  <h1>Mozscape API Pricing</h1>
+  <h1>New User Sign Up</h1>
   <hr>
   <p>SEOmoz currently offers two core pricing options for the Mozscape API: the free version and the paid version. Our free version is great when you need a relatively small amount of information about a handful of different pages. The paid version is designed to let you drill down deep into a site, page or link. Choose what fits you best, below.</p>
-
-<table class="prices">
- </table>
-
-  <a href="/api/keys" class="button gradient darkgreen" id="generate-api-button">Generate API Key</a>
-  <a href="/api/contact" rel="facebox" class="button gradient darkgreen" id="contact-button">Contact Us to Sign Up</a>
-  <div class="span-16 prepend-4">
-    <p class="small center"><em>* Have an SEOmoz PRO account? <a href="mailto:help@seomoz.org">Contact us</a> to receive an increased rate limit of 1 request every 5 seconds.</em></p>
+  <div class="newuserForm">
+     First name: <input type = "text" id = "newUserFirstName"><br>
+     Last name: <input type = "text" id = "newUserLastName"><br>
+     Company name: <input type = "text" id = "newUserCompanyName"><br>
+     Email: <input type = "text" id = "newUserEmail"><br>
+     <label><button id = "submitNewUser"> Register </label>
   </div>
-  <div class="clear"></div>
-</div>
 
 <div class="hidden">
   <div id="rows-tooltip">All requests are returned in rows. <br>For example, if you request a handful of metrics on a certain URL, <br>all of those results will be returned as a single row of data.</div>
 <div id="free-url" class="pricing-popup">
   <h3>Available Free URL Metrics Calls</h3>
-<div class="span-6">
-<dl>
-<dl><dt>Title</dt><dd>  The title of the page if available</dd>
-    <dt>URL</dt><dd>  The canonical form of the URL</dd>
-    <dt>External Links</dt><dd>  The number of juice-passing external links to the URL</dd>
-</dl></div>
-<div class="span-7">
-<dl>
-    <dt>Links </dt><dd> The number of links (juice-passing or not, internal or external) to the URL</dd>
-    <dt>mozRank </dt><dd> The mozRank of the URL</dd>
-    <dt>Subdomain mozRank </dt><dd> The mozRank of the subdomain of the URL</dd>
-    <dt>HTTP Status Code </dt><dd> The HTTP status code recorded by Mozscape for the URL</dd>
-</dl></div>
-<div class="span-6 last">
-<dl>
-    <dt>Page Authority </dt><dd>A score out of 100-points representing the likelihood for arbitrary content to rank on this page</dd>
-  <dt>Domain Authority </dt><dd>A score out of 100-points representing the likelihood for arbitrary content to rank on this domain</dd>
-</dl>
-</div>
+
 </div>
 
 <div id="free-links" class="pricing-popup">
-  <h3>Available Free Links Calls</h3>
-<div class="span-6">
-<dl><dt>Page to Page </dt><dd> Returns a set of Source pages linking to the specified Target page</dd>
-    <dt>Page to Subdomain  </dt><dd>Returns a set of Source pages linking to any page on the specified&nbsp;target's subdomain</dd>
-</dl></div>
-<div class="span-7">
-<dl>
-    <dt>Page to Domain </dt><dd> Returns a set of source pages linking to linking to any page on the specified Target's root domain</dd>
-    <dt>Domain to Page </dt><dd> Returns a single link from a set of root domains linking to the target's specified page</dd>
-</dl></div>
-<div class="span-6 last">
-<dl>
-    <dt>Domain to Subdomain  </dt><dd>Returns a single link each from a set of root domains linking to any page on the specified target's subdomain</dd>
-  <dt>Domain to Domain </dt><dd> Returns a single link each from a set of root domains linking to any page on the specified target's root domain<dd>
-</dl>
-</div>
 </div>
 
 <div id="paid-url" class="pricing-popup">
   <h3>Available Paid URL Metrics Calls</h3>
 <div class="span-6">
-<dl><dt>Title</dt><dd>  The title of the page if available</dd>
-  <dt>URL</dt><dd>  The canonical form of the URL</dd>
-  <dt>Subdomain  </dt><dd>The subdomain of the URL</dd>
-  <dt>Root Domain </dt><dd> The root domain of the URL</dd>
-  <dt>External Links</dt><dd>  The number of juice-passing external links to the URL</dd>
-  <dt>Subdomain External Links </dt><dd> The number of juice-passing external links to the subdomain of the URL</dd>
-  <dt>Root Domain External Links </dt><dd> The number of juice-passing external links to the root domain of the URL</dd>
-  <dt>Juice-Passing Links  </dt><dd>The number of juice-passing links (internal or external) to the URL</dd>
-  <dt>Subdomains Linking </dt><dd> The number of subdomains with any pages linking to the URL</dd>
-  <dt>Root Domains Linking  </dt><dd>The number of root domains with any pages linking to the URL</dd>
-  <dt>Links </dt><dd> The number of links (juice-passing or not, internal or external) to the URL</dd>
-  <dt>Subdomain Subdomains Linking </dt><dd> The number of subdomains with any pages linking to the subdomain of the URL</dd>
-  <dt>Root Domain Root Domains Linking</dt><dd>  The number of root domains with any pages linking to the root domain of the URL</dd>
-  <dt>mozRank </dt><dd> The mozRank of the URL</dd>
-  <dt>Subdomain mozRank </dt><dd> The mozRank of the subdomain of the URL</dd>
-  <dt>Root Domain mozRank </dt><dd> The mozRank of the Root Domain of the URL</dd>
-  <dt>mozTrust</dt><dd>The mozTrust of the URL</dd>
-  <dt>Subdomain mozTrust</dt><dd>  The mozTrust of the subdomain of the URL</dd>
-</dl></div>
+</div>
 <div class="span-7">
 <dl>
   <dt>Root Domain mozTrust</dt><dd>  The mozTrust of the root domain of the URL</dd>
@@ -455,7 +399,7 @@
         <h2>Voted Best SEO Tool 2010!</h2>
       
         <a href="http://www.seomoz.org/cart/freetrial?pg=features" class="free-trial">
-          <img alt="Try it for Free!" src="/moz_nav_assets/images/try-it-for-free.png" class="try-it-free" />
+          <img alt="Try it for Free!" src="try-it-for-free.png" class="try-it-free" />
         </a>
       
         <h3>Looking for SEO consulting?</h3>

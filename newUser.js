@@ -4,7 +4,7 @@ $(document).ready(function()	{
 
 function postNewUser()	{
 	$.post("jdbwebservice.php",
-		{$("#newUserFirstName").val(), $("#newUserLastName").val(),$("#newUserCompanyName").val(), $("#newUserEmail").val() });
+		{fname : $("#newUserFirstName").val(), lname : $("#newUserLastName").val(), comname : $("#newUserCompanyName").val(), email : $("#newUserEmail").val() });
 	$("#newUserFirstName").val("");
 	$("#newUserLastName").val("")
 	$("#newUserCompanyName").val("")
